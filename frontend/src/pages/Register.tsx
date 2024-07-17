@@ -88,7 +88,7 @@ const Register = () => {
 
             <label className="text-gray-800 text-sm font-bold flex-1">
                           Phone
-                         <input className="border w-full rounded px-2 py-1 font-normal"  {...register("phone", { required: "This field is required" })} />
+                         <input className="border w-full rounded px-2 py-1 font-normal" type="tel"  {...register("phone", { required: "This field is required" })} />
                          {errors.phone && (<span className="text-red-500"> {errors.phone.message} </span>)}
             </label>
 
