@@ -19,7 +19,7 @@ const MyHotels = () => {
           <h1 className="text-3xl font-bold">
             My Hotels
           </h1>
-          <Link to="/add-hotel" className="flex bg-blue-600 text-white text-xl font-bold p-2 hover:bg-blue-500">
+          <Link to="/add-hotel" className="flex bg-blue-600 text-white text-xl font-bold p-2 hover:bg-blue-500 rounded-md">
              Add Hotel
           </Link>
        </span>
@@ -60,7 +60,7 @@ const MyHotels = () => {
 
                    <div className="flex items-center p-3 border border-slate-300 rounded-sm">
                     <BiHotel className="mr-3"/>
-                      <BsPerson />  {hotel.adultCount} , <BiChild />    {hotel.childCount} 
+                      <BsPerson />{hotel.adultCount} ,<BiChild />{hotel.childCount} 
                    </div>
 
                    <div className="flex items-center p-3 border border-slate-300 rounded-sm">
@@ -71,7 +71,7 @@ const MyHotels = () => {
                 </div>
 
                 <span className="flex justify-end">
-                    <Link to={`/edit-hotel/${hotel._id}`} className="flex bg-blue-600 text-white text-xl font-bold p-2 hover:bg-blue-500">
+                    <Link to={`/edit-hotel/${hotel._id}`} className="flex bg-blue-600 text-white text-xl font-bold p-2 hover:bg-blue-500 rounded-md">
                      View Details
                     </Link>
                 </span>
